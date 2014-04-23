@@ -32,6 +32,7 @@ typedef void (^RZRevealViewControllerCompletionBlock)(BOOL succeeded);
 
 // Pan gesture for opening/closing reveal panel. Its delegate may not be changed or an exception will be thrown.
 @property (strong, readonly, nonatomic) UIPanGestureRecognizer *revealPanGestureRecognizer;
+@property (nonatomic, readonly, strong) UIScreenEdgePanGestureRecognizer *revealEdgePanRecognizer;
 
 @property (assign, nonatomic, readonly, getter = isLeftHiddenViewControllerRevealed) BOOL leftHiddenViewControllerRevealed;
 @property (assign, nonatomic, readonly, getter = isRightHiddenViewControllerRevealed) BOOL rightHiddenViewControllerRevealed;

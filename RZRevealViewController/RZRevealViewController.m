@@ -79,7 +79,7 @@
 @property (strong, readwrite, nonatomic) UIPanGestureRecognizer *revealPanGestureRecognizer;
 @property (strong, nonatomic) UITapGestureRecognizer *hideTapGestureRecognizer;
 
-@property (nonatomic, strong) UIScreenEdgePanGestureRecognizer *revealEdgePanRecognizer;
+@property (nonatomic, readwrite, strong) UIScreenEdgePanGestureRecognizer *revealEdgePanRecognizer;
 @property (nonatomic, assign) BOOL usesEdgeGestureRecognizer;
 @property (nonatomic, assign) UIRectEdge dragEdges;
 
